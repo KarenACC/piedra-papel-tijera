@@ -37,6 +37,7 @@ font-family: 'Raleway', sans-serif;
     align-items: center;
     border-radius: 30px;
     margin: 5px;
+    padding: 3%;
     
 }
 
@@ -64,7 +65,7 @@ font-family: 'Raleway', sans-serif;
     height: 40px;
     border-radius: 25%;
     border: none;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .boton span{
@@ -118,11 +119,13 @@ font-family: 'Raleway', sans-serif;
 
 .eleccion img{
     width: 150px;
+    height: 155px;
     border-radius: 15px;
 }
 
 #resultado{
     width: 300px;
+    height: auto;
 }
 
 .resultadoFinal{
@@ -131,4 +134,52 @@ font-family: 'Raleway', sans-serif;
     background-color: rgba(0, 0, 0, 0.838);
     border-radius: 25px;
     padding: 5%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+
+    .jugadores{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .eleccion img{
+        width: 50px;
+        height: 100px;
+    }
+
+    .player{
+        width:90% ;
+        padding: 3%;
+        height: 350px;
+        padding: 0px;
+    }
+
+    .resultadoFinal{
+        width: 90%;
+        height: 25%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container{
+        width: 100%;
+    }
+
+    .eleccion img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+
+    .resultadoFinal{
+        height: 25%;
+        width: 90%;
+    }
 }
