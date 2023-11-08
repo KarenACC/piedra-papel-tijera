@@ -17,7 +17,6 @@
             <div class="player">
                 <div class="opciones-container">
                   
-                    
                     <div class="opciones">
                         <span id="instruccion">Elije tu opción</span>
                         <div class="opciones-img">
@@ -28,7 +27,7 @@
                         
                     </div>
                     <button type="submit" id="boton" class="boton" disabled><span class="material-symbols-outlined">play_arrow</span></button>
-
+    
                 </div>
                 <div id="jugador-eleccion" style="display: none;">
 
@@ -59,11 +58,20 @@
             <div class="eleccion">
                 <img src="" alt="" id="resultado">
                 <button type="submit" id="replay" class="boton"><span class="material-symbols-outlined">replay</span></button>
-
             </div>
-
         </div>
+        
+        <button id="openModalBtn" class="boton-historial">Ver historial</button>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Historial</h2>
+            <ul id="listaHistorial" class="listaHistorial"> </ul>
+        </div>
+
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
